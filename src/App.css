@@ -1,0 +1,133 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.weather-card {
+  width: 22rem;
+  min-width: 22rem;
+  height: 30rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  transition: background 0.5s ease, transform 0.3s ease;
+  animation: fadeIn 1s ease-out;
+}
+
+.weather-card:hover {
+  transform: scale(1.05);
+}
+
+.weather-card.bg-changed {
+  background: rgba(255, 255, 255, 0.2); /* Example of a changed background */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.icon-temp-wrapper .weather-icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.weather-icon.spin {
+  animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.temperature {
+  color: #ff6347;
+}
+
+.location {
+  color: #f0e68c;
+}
+
+.date-time-wrapper .date, .time {
+  color: #ffffff;
+}
+
+.additional-info .windspeed-info, .humidity-info {
+  font-size: 0.875rem;
+  padding: 0.75rem;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.heat-index-wrapper {
+  font-size: 1.125rem;
+  color: #add8e6;
+}
+
+.conditions-wrapper {
+  color: #87ceeb;
+}
+
+.separator {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+input:focus {
+  background: #f0f0f0;
+  border-color: #aaa;
+}
